@@ -1,0 +1,14 @@
+.one {
+  text-transform: uppercase;
+  text-decoration: underline; 
+  text-align: left
+}
+
+.two {
+    text-decoration: line-through;
+    text-align: right;
+}
+
+.three {
+  text-align: center;
+}
