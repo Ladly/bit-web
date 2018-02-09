@@ -1,0 +1,27 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.one {
+    font-family: 'Courier New', Courier, monospace
+}
+
+.two {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.three {
+    font-family: 'Times New Roman', Times, serif
+}
+
+.four {
+    font-style: oblique;
+
+}
+
+span {
+    font-weight: bolder;
+    font-style: italic;
+}

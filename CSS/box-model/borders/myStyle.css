@@ -1,0 +1,14 @@
+p {
+    background: yellow;
+    border-width: 5px;
+}  
+
+.red-dashed {
+    border-style: dashed;
+    border-color: red;
+}
+
+.green-solid {
+    border-style: solid;
+    border-color: green;
+}
