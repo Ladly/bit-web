@@ -1,0 +1,29 @@
+.box{
+    margin:0 auto ;
+    display: block;
+    width: 960px;
+}
+
+.circle{
+    list-style: circle;
+}
+.square{
+    list-style: square;
+}
+.alpha{
+    list-style: lower-alpha;
+}
+.roman{
+    list-style: upper-roman;
+}
+.frr{
+    list-style-image: url(http://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/Phi.png&h=50&w=50);
+}
+.nba{
+ list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Dialog-information_on.svg/50px-Dialog-information_on.svg.png)
+}
+
+
+.with-width {
+    width: 200px;
+}

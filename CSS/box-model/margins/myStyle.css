@@ -9,8 +9,19 @@ p {
     padding: 50px;
 }
 
+.first {
+    width: 300px;
+    margin: 50px;
+}
+.third {
+    width: 200;
+    margin-left: 100px;
+}
+
 .green-solid {
     border-style: solid;
     border-color: green;
     padding-top: 50px;
+    width: 400px;
+    margin: 0 auto;
 }

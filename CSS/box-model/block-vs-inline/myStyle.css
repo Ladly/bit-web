@@ -1,0 +1,32 @@
+p {
+    background: yellow;
+    border-width: 5px;
+    padding: 0;
+    margin: 0 20px 0 0;
+    display: inline-block;
+}  
+
+.red-dashed {
+    border-style: dashed;
+    border-color: red;
+    /* padding: 50px; */;
+    width: 200px;
+}
+
+.first {
+    width: 300px; 
+    /* margin: 50px; */;
+}
+
+.third {
+    width: 200px;
+    /* margin-left: 100px; */
+}
+
+.green-solid {
+    border-style: solid;
+    border-color: green;
+    /* padding-top: 50px; */
+    width: 400px;
+    /* margin: 0 auto; */
+}
