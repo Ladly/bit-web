@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(./assets/images/banner3.jpg);
+    background-size: cover;
+    padding: 15% 15% 10% 15%;
+    text-align: center;
+} 
+
+header > div {
+    margin-top: 10%;
+}
+
+header > div > a {
+    background: lightblue;
+    padding: 4%;
+    text-decoration: none;
+    color: white;
+    border-radius: 10%;
+}
+
+nav > h1 {
+    color: grey;
+    text-align: center;
+    margin: 10% 0 5%;
+}
+
+nav > h1 > span {
+    border-top: 5px solid grey;
+    border-left: 5px solid grey;
+    border-bottom: 5px solid grey;
+    color: orange;
+}
+
+nav > ul {
+    margin: 2%;
+}
+
+nav > ul > li {
+    display: block;
+    background: lightblue;
+    text-align: center;
+    padding: 3% 0;
+    font-weight: bold;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+section  hr {
+    width: 25%;
+    margin: 5% auto;
+    height: 3px;
+    background: black;
+    border-color: black;
+}
+section h2 {
+    margin: 4% 0;
+    text-align: center;
+}
+
+.width-90-percent {
+    width: 90%;
+    margin: 30% auto;
+}
+
+#home h5{
+    font-size: 1.2rem;
+    color:lightblue;
+    font-weight: normal;
+
+} 
+
+ #home p {
+    margin: 5% 0;
+}
+
+#home ul {
+    list-style-image: url(./assets/images/arrow_bullet.png);
+    padding-left: 6%;
+}
+
+#home > ul > li {
+    width: 100%;
+} 
+
+#home img {
+    width: 100%;
+    margin: 5% 0;
+}
+
+#about {
+    margin-bottom: 20%;
+}
+
+#about hr {
+    margin-bottom: 15%; 
+}
+
+#about article {
+    width: 90%;
+    background: lightblue;
+    margin: 3% auto;
+    padding: 5% 3%;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+    margin-right: 10%;
+}
+
+#about img::after {
+    display: table;
+    clear: both;
+}
+
+.clear-both {
+    clear: both;
+    color: white;
+}
+
+#services {
+    text-align: center;
+    
+}
+
+#services h6 {
+    font-size: 1.3rem;
+}
+
+#services article {
+    width: 100%;
+    color: white;
+}
+
+#services div {
+    margin: 5%;
+}
+
+#services article:nth-child(3) {
+    background: lightgreen;
+    padding: 5% 0;
+}
+
+#services article:nth-child(4) {
+    background: pink;
+    padding: 10% 0;
+}
+
+#services article:nth-child(5) {
+    padding: 10% 5%;
+    background: blue;
+}
+
+#services article:nth-child(3) img {
+    width: 5%;
+    margin-right: 1%;
+}
+
+#services article:nth-child(3) a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+
+#services article:nth-child(4) img {
+    width: 5%;
+    margin: 5% 5% 0 0;
+}
+
+#services article:nth-child(5) img {
+   float: left;
+}
+
+#services article:nth-child(5) img::after {
+    display: table;
+    clear: both;
+ }
+
+ #services article:nth-child(5) h6 {
+    margin-bottom: 5%;
+ }
+
+ #services article:nth-child(6) {
+     background: lightblue;
+     
+ }
+ 
+ #services article:nth-child(6) img {
+     width: 100%;    
+}
+
+
+
+
+
