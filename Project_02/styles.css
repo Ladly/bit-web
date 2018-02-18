@@ -1,3 +1,18 @@
+@font-face {
+    font-family: roboto-italic;
+    src: url(./assets/fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: roboto-headers;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-nav;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +30,12 @@ header {
 header h2 {
     font-size: 2.3rem;
     font-weight: lighter;
+    font-family: roboto-headers;
 }
 
 header > div {
     margin-top: 10%;
+    font-family: roboto-nav;
 }
 
 header > div > a {
@@ -28,6 +45,7 @@ header > div > a {
     color: white;
     border-radius: 10%;
     text-transform: capitalize;
+    font-family: roboto-nav;
 }
 
 nav > h1 {
@@ -36,6 +54,7 @@ nav > h1 {
     margin: 10% 0 5%;
     text-transform: uppercase;
     letter-spacing: 0.7rem;
+    font-family: roboto-headers;
 }
 
 nav > h1 > span {
@@ -65,7 +84,7 @@ nav > ul > li > a {
 }
 
 section  hr {
-    width: 25%;
+    width: 10%;
     margin: 5% auto;
     height: 3px;
     background: black;
@@ -75,6 +94,7 @@ section h2 {
     margin: 4% 0;
     text-align: center;
     text-transform: capitalize;
+    font-family: roboto-headers;
 }
 
 .width-90-percent {
@@ -87,11 +107,12 @@ section h2 {
     color:lightblue;
     font-weight: normal;
     text-transform: capitalize;
-
+    font-family: roboto-headers;
 } 
 
 #home p {
     margin: 5% 0;
+    font-family: roboto-italic;
 }
 
 #home ul {
@@ -99,10 +120,13 @@ section h2 {
     padding-left: 6%;
 }
 
-#home > ul > li {
+ #home  ul > li {
     width: 100%;
-    
-} 
+    letter-spacing: 2px; 
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 1% 0;
+}  
 
 #home img {
     width: 100%;
@@ -152,6 +176,8 @@ section h2 {
 #services h6 {
     font-size: 1.3rem;
     text-transform: uppercase;
+    font-family: roboto-headers;
+    margin-bottom: 5%;
 }
 
 #services article {
@@ -161,10 +187,6 @@ section h2 {
 
 #services > div {
     color: white;
-}
-
-#services article h6 {
-    margin-bottom: 5%;
 }
 
 #services article > div > img {
@@ -208,7 +230,7 @@ section h2 {
     margin: 0;
 }
 
-#services article:nth-child(3) img {
+#services article:nth-child(3) i {
     float: left;
 }
 
@@ -258,9 +280,11 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
+    font-family: roboto-headers;
 }
 footer p {
     margin-top: 5%;
+    font-family: roboto-headers;
 }
 
 @media only screen and (min-width: 768px) {
@@ -374,7 +398,8 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
     .wrapper {
-        max-width: 1200px;
+        /* max-width: 1200px; */
+        width: 1200px;
         margin: 0 auto;
     }
 
