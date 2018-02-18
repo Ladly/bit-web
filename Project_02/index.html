@@ -8,26 +8,28 @@
     <title>Build estate</title>
 </head>
 <body>
-    <header>
-        <h2>We shape our buildings thereafter they shape us</h2>
-        <div><a href="#">Read more</a></div>     
-    </header>
-
-    <nav>
-        <h1><span>Build</span> estate</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper">
+        <header>
+            <h2>We shape our buildings thereafter they shape us</h2>
+            <div><a href="#">Read more</a></div>     
+        </header>
+        
+        <nav>
+            <h1><span>Build</span> estate</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <main>
         <section class="width-90-percent" id="home">
-            <article >
-                <h2>Who we are</h2>
-                <hr>
+            <h2>Who we are</h2>
+            <hr>
+            <article class="floated">
                 <h5>Welcome to our build estate</h5>
                 <p>"If you can build buildings, why sit on the beach? we always think of buildings in their settings, but so do other architects"</p>
                 <ul>
@@ -37,8 +39,8 @@
                     <li>Best design architecture</li>
                 </ul>
             </article>
+            <img src="./assets/images/about.jpg" alt="house">
             <article>
-                <img src="./assets/images/about.jpg" alt="house">
                 <h5>We make your dream home</h5>
                 <p>"For decades engineers have stood accused that their building dont hae any cultural value. we have attempted to liberate engineering of this accusation"</p>
                 <ul>
@@ -76,7 +78,7 @@
         <section id="services">
             <h2>Get in touch with us</h2>
             <hr>
-            <article>
+            <article class="floated">
                 <h6>Contact us</h6>
                 <div>
                     <img src="./assets/images/phone.png" alt="phone">
@@ -95,18 +97,18 @@
                 <img src="./assets/images/linkedin.png" alt="some stuff">
                 <img src="./assets/images/linkedin.png" alt="some stuff">
             </article>
-            <article>
+            <article class="floated">
                 <address>
                     <h6>Address</h6>
                     <img src="./assets/images/arrow_bullet.png" alt="position">
                     <p>1682 Richmond St, Corner in, ON N58 3d7, USA</p>
                 </address>
             </article>
-            <article>
-                <img src="./assets/images/house.png" alt="">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202134.2822943841!2d-97.58377591593376!3d37.66452611956334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87badb6ad27f182d%3A0x9396d5bf74d33d3e!2sWichita%2C+KS%2C+USA!5e0!3m2!1sen!2srs!4v1518868377879" 
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <article class="stupid-house-image">
+                <img src="./assets/images/house.png" alt="house" class="stupid-image">
             </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202134.2822943841!2d-97.58377591593376!3d37.66452611956334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87badb6ad27f182d%3A0x9396d5bf74d33d3e!2sWichita%2C+KS%2C+USA!5e0!3m2!1sen!2srs!4v1518868377879" 
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
 
         <section id="contact-us" class="width-90-percent">
@@ -117,7 +119,7 @@
                 <input type="email" name="email" placeholder="Email">
                 <input type="text" name="phone" placeholder="Telephone">
                 <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <input type="submit" value="Submit" id="wtf">
+                <input type="submit" value="Submit">
             </form>
         </section>
         <footer>

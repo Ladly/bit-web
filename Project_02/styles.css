@@ -90,7 +90,7 @@ section h2 {
 
 } 
 
- #home p {
+#home p {
     margin: 5% 0;
 }
 
@@ -146,8 +146,7 @@ section h2 {
 }
 
 #services {
-    text-align: center;
-    
+    text-align: center;    
 }
 
 #services h6 {
@@ -215,9 +214,7 @@ section h2 {
  }
  
  #services article:nth-child(6) img {
-     width: 100%;
-     display: inline-block;
-     margin: 0 auto;  
+     height: 300px; 
 }
 
 #services iframe {
@@ -233,14 +230,19 @@ section h2 {
     width: 100%;
     padding: 2%;
     margin: 5% 0; 
+    border: 1px solid black;
 }
 
 #contact-us form textarea {
     width: 100%;
+    border: 1px solid black;
 }
 
-#wtf {
- /* aaaaaaaaa   */
+#contact-us form input:nth-child(5) {
+    background: orange;
+    border: none;
+    border-radius: 5%;
+    width: 30%;
 }
 
 footer {
@@ -256,6 +258,105 @@ footer a {
 }
 footer p {
     margin-top: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+    wrapper {
+        position: relative;
+    }
+    header h2 {
+        font-size: 3rem;
+    }
+
+    header > div > a {
+        padding: 2.5%;
+    }
+
+    nav h1 {
+       position: absolute;
+       top: -50px;
+       left: 1%;
+       letter-spacing: .5rem;
+    }
+
+    nav ul {
+         position: absolute;
+         right: 1%;
+         top: 10px;
+         
+    }
+
+    nav ul li {
+        display: inline-block;
+        background: rgba(0, 0 , 0, 0);
+        letter-spacing: 1px;        
+    }
+
+    nav > ul > li > a {
+        color: grey;
+    }
+    
+    .width-90-percent {
+        margin: 5% auto;
+    }
+
+    #home .floated {
+        float: left;
+        width: 50%;
+    }
+
+    #home img {
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    #about article {
+        width: 45%;
+        display: inline-block;
+        margin: 1% 2%;
+    }
+
+    #services article {
+        width: 50%;
+        display: inline-block;
+        height: 230px;
+        margin: 0;
+    }
+
+    #services .floated {
+        float: left;
+        overflow: auto;
+    }
+
+    .stupid-house-image {
+        overflow: hidden;
+    }
+    .stupid-house-image img {
+        height: 250px;
+    }
+
+    #services iframe {
+        width: 100%;
+    }
+
+    #contact-us form input {
+        width: 31%;
+    }
+
+    #contact-us form input:nth-child(1) {
+        float: left;
+    }
+
+    #contact-us form input:nth-child(2) {
+        margin: 0 3%;
+    } 
+
+    footer {
+        padding: 5%;
+        margin-bottom: 0;
+    }
+
 }
 
 
