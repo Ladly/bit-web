@@ -1,0 +1,14 @@
+$favorite-color: rgb(209, 47, 82);
+
+body {
+    background-color: $favorite-color;
+     display: flex;
+    p {
+        margin: 10%;
+        color: #2ddd2d;
+        background: black;
+        &:hover {
+            background: lime;
+        }
+    }
+}

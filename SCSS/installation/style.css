@@ -1,0 +1,11 @@
+body {
+  background-color: #d12f52;
+  display: flex; }
+  body p {
+    margin: 10%;
+    color: #2ddd2d;
+    background: black; }
+    body p:hover {
+      background: lime; }
+
+/*# sourceMappingURL=style.css.map */
