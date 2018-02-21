@@ -5,8 +5,19 @@ body {
   background: lightgreen; }
 
 .container {
-  width: 960px;
+  width: 70%;
   margin: 0 auto; }
+
+.paragraph-holder .cool-paragraph, .paragraph-holder p:nth-child(2), .paragraph-holder p:nth-child(3) {
+  background: red;
+  color: pink;
+  display: inline-block;
+  border: 2px solid red;
+  width: 33.3333333333%; }
+.paragraph-holder p:nth-child(2) {
+  border-color: blue; }
+.paragraph-holder p:nth-child(3) {
+  border-color: green; }
 
 h1 {
   padding: 20px 0;
@@ -22,25 +33,26 @@ h2 {
   color: white; }
 
 img {
-  height: 400px;
+  width: 50%;
   margin: 40px auto 40px;
-  display: block; }
+  display: block;
+  -webkit-box-shadow: 7px 7px 5px 0px black;
+  -moz-box-shadow: 7px 7px 5px 0px black;
+  box-shadow: 7px 7px 5px 0px black; }
 
 table {
   width: 100%;
   color: #333;
   background: white;
   border-collapse: collapse; }
-
-tr {
-  border-bottom: 1px solid #eee; }
-
-td {
-  padding: 5px 0; }
-
-td:first-child {
-  width: 300px;
-  padding-left: 10px; }
+  table tr {
+    border-bottom: 1px solid #eee; }
+    table tr td {
+      padding: 5px 0; }
+    table tr:first-child {
+      width: 300px;
+      padding-left: 10px;
+      text-shadow: 2px 2px green; }
 
 p#footer {
   margin-top: 100px; }

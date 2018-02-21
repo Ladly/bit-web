@@ -1,5 +1,5 @@
-$favorite-color: green;
-
+@import "variables";
+@import "mixins";
 
 body {
     margin: 0;
@@ -9,8 +9,29 @@ body {
 }
 
 .container {
-    width: 960px;
+    width: 70%;
     margin: 0 auto;
+}
+
+
+
+.paragraph-holder {
+    .cool-paragraph {
+        background: red;
+        color: pink; 
+        display: inline-block;
+        border: 2px solid red;
+        width: (100% / 3)
+    }
+
+    p:nth-child(2) {
+        @extend .cool-paragraph;
+        border-color: blue
+    }
+    p:nth-child(3) {
+        @extend .cool-paragraph;
+        border-color: green;
+    }
 }
 
 h1 {
@@ -29,9 +50,10 @@ h2 {
 }
 
 img {
-    height: 400px;
+    width: 50%;
     margin: 40px auto 40px;
     display: block;
+    @include box-shadow(black)
 }
 
 table {
@@ -39,19 +61,18 @@ table {
     color: #333;
     background: white;
     border-collapse: collapse;
-}
-
-tr {
-    border-bottom: 1px solid #eee;
-}
-
-td {
-    padding: 5px 0;
-}
-
-td:first-child {
-    width: 300px;
-    padding-left: 10px;
+    tr {
+        border-bottom: 1px solid #eee;
+        td {
+            padding: 5px 0;
+            
+        }
+        &:first-child {
+            width: 300px;
+            padding-left: 10px;
+            @include text-shadow(green)
+        }
+    }
 }
 
 p#footer {
