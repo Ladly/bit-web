@@ -1,0 +1,19 @@
+.row > div:nth-child(odd) {
+    background:green;
+}
+
+.row > div:nth-child(even) {
+    background:blueviolet;
+}
+
+.row > div {
+    border-radius: 5px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.col-md-0 {
+    display: hidden;
+}
