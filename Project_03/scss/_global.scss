@@ -1,0 +1,17 @@
+.about {
+    background: $Greenish;
+    text-align: center;
+    color: white;
+
+    hr {
+        @include hrStyle(white,white);
+        width: 50%;
+        height: 3px;
+    }
+    .row {
+        padding: 10% 0 5%;
+    }
+    button {
+        margin: 10%;
+    }
+}

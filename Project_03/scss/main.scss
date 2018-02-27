@@ -1,9 +1,21 @@
 @import "variables";
-@import "navbar.scss";
+@import "mixins";
+@import "navbar";
+@import "portfolio";
+@import "masterhead";
+@import "global";
+@import "contact";
 
-.projects {
-    img {
-        width: 90%;
+footer {
+    background: $Blueish;
+    color: whitesmoke;
+    text-align: center;
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    article {
+        margin-top: 5%;
     }
 }
 

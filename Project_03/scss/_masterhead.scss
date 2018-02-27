@@ -1,0 +1,24 @@
+.header-container {
+    background: $Greenish;
+    text-align: center;
+    color: white;
+    img {
+        display: block;
+        margin: 5% auto;
+    }
+
+    hr {
+        color: white;
+        background: white;
+        height: 3px;
+        width: 50%;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 5%;             
+    }
+}

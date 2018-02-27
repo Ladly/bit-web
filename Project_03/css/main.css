@@ -1,10 +1,77 @@
-.nav-container {
-  background: navy; }
+.portfolio {
+  margin: 15% 0;
+  text-align: center; }
+  .portfolio hr {
+    background: black;
+    color: color;
+    height: 3px;
+    width: 50%; }
+  .portfolio img {
+    width: 90%;
+    display: block;
+    margin: 2% auto; }
 
-.bg-light {
-  background: navy; }
+.header-container {
+  background: #18bc9c;
+  text-align: center;
+  color: white; }
+  .header-container img {
+    display: block;
+    margin: 5% auto; }
+  .header-container hr {
+    color: white;
+    background: white;
+    height: 3px;
+    width: 50%; }
+  .header-container h2 {
+    text-transform: uppercase; }
+  .header-container p {
+    margin: 5%; }
 
-.projects img {
-  width: 90%; }
+.about {
+  background: #18bc9c;
+  text-align: center;
+  color: white; }
+  .about hr {
+    background: white;
+    color: color;
+    width: 50%;
+    height: 3px; }
+  .about .row {
+    padding: 10% 0 5%; }
+  .about button {
+    margin: 10%; }
+
+.inputStyles, .contact-me input, .contact-me textarea {
+  width: 100%;
+  margin: 2% 0;
+  border: none;
+  border-bottom: 1px solid #495057;
+  color: #495057; }
+
+.contact-me {
+  margin: 10% 0;
+  text-align: center; }
+  .contact-me hr {
+    background: black;
+    color: color;
+    height: 3px;
+    width: 50%; }
+  .contact-me input {
+    height: 50px;
+    padding-bottom: 10px; }
+  .contact-me button {
+    background: #18bc9c;
+    color: white; }
+
+footer {
+  background: #2c3e50;
+  color: whitesmoke;
+  text-align: center; }
+  footer p {
+    padding: 0;
+    margin: 0; }
+  footer article {
+    margin-top: 5%; }
 
 /*# sourceMappingURL=main.css.map */

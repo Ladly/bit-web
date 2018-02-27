@@ -1,0 +1,31 @@
+.inputStyles {
+    width: 100%;
+    margin: 2% 0;
+    border: none;
+    border-bottom: 1px solid $Greyish;
+    color: $Greyish;
+}
+
+.contact-me {
+    margin: 10% 0;
+    text-align: center;
+    hr {
+        @include hrStyle(black, black);
+        height: 3px;
+        width: 50%;
+    }
+    input {
+        @extend .inputStyles;
+        height: 50px;
+        padding-bottom: 10px;
+    }
+
+    textarea {
+        @extend .inputStyles; 
+    }
+
+    button {
+        background: $Greenish;
+        color: white;
+    }
+}
