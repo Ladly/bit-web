@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .red {
+            background: red;
+        }
+
+        .grey {
+            background: grey;
+        }
+        .green {
+            background: greenyellow
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+    </ul>
+
+    <ul>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+    </ul>
+
+    <ul>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+        <li>34</li>
+    </ul>
+
+    <script>
+
+        function colorSecondList() {
+            var secondList = document.querySelector("ul:nth-child(2)")
+            
+            return secondList.classList.add("red")
+        }
+
+        function colorAllListElements() {
+            var listElements = document.querySelectorAll("li")
+
+            for(var i = 0; i < listElements.length; i++) {
+                listElements[i].classList.add("grey")
+            } 
+        }
+
+        function colorListElementsInThirdList() {
+            var thirdListElements = document.querySelectorAll('ul:nth-child(3) > li')
+
+            for(var i = 0; i < thirdListElements.length; i++) {
+                thirdListElements[i].classList.add("green")
+            }
+        }
+
+        colorSecondList()
+
+        colorAllListElements();
+
+        colorListElementsInThirdList();
+        
+        
+
+
+    </script>
+</body>
+</html>
