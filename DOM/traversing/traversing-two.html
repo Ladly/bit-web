@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 33%
+        }
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <img src="http://via.placeholder.com/300x300" alt="">
+        </div>
+        <div>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <img src="http://via.placeholder.com/300x300" alt="">
+        </div>
+    </div>
+    
+    <script>
+        var borderImg = document.querySelectorAll("div > div")[0].children[2].classList.add("selected")
+
+        function removeAndDeleteBorder() {
+            var getBordered = document.querySelector(".selected")
+            getBordered.classList.remove("selected")
+            var makeBordered = getBordered.parentElement.nextElementSibling.children[1];
+            makeBordered.classList.add("selected")
+            
+        }
+
+        removeAndDeleteBorder()
+        
+    </script>
+</body>
+</html>

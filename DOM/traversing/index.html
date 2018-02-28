@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active {
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <ul>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+        </ul>
+    </div>
+ 
+    <div>
+        <ul>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+        </ul>
+    </div>
+
+    <script>
+        
+        var activeLink = document.querySelectorAll("ul > li")[6].classList.add("active")
+
+        function removeAndAddClass() {
+            var getActiveLink = document.querySelector(".active")
+            getActiveLink.classList.remove("active")
+            var parentElement = getActiveLink.parentElement.parentElement
+            var sibling = parentElement.previousElementSibling.children[0].children[2].classList.add("active")
+        }
+
+        removeAndAddClass()
+          
+    
+    </script>
+</body>
+</html>

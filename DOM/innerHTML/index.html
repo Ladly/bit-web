@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <div></div>
+
+    <script>
+
+        var bothDiv = document.querySelectorAll("div")
+        var divOne = bothDiv[0];
+        var divTwo = bothDiv[1]
+        
+        var arrOne = [1, 2, 3, 4, 5];
+        var arrTwo = ["One", "two", "three", "four", "five"];
+
+        function createSelect(arr, elem) {
+            var select = document.createElement("select")
+
+            for(var i = 0; i < arr.length; i++){
+                var option = document.createElement("option")
+                option.textContent = arr[i]
+                select.append(option)
+            }
+
+            elem.append(select)
+        }
+
+        function createSelectInnerHTML(arr, elem) {
+            var select = document.createElement("select")
+
+            for(var i = 0; i < arr.length; i++) {
+                var option = document.createElement("option")
+                option.innerHTML = arr[i]
+                select.append(option)
+            }
+
+            elem.append(select)
+        }
+
+        createSelect(arrOne, divOne)
+        createSelectInnerHTML(arrTwo, divTwo)
+    </script>
+</body>
+</html>

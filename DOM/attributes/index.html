@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        .redBorder {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <label>inp-1<input type="text" required></label>
+        <label>inp-2<input type="text" required></label>
+        <label>inp-3<input type="text"></label>
+        <label>inp-4<input type="text" required></label>
+        <label>inp-5<input type="text"></label>
+        <br>
+        <button type="submit"></button>     
+    </form>
+
+    <script>
+
+        var button = document.querySelector("button")
+        button.addEventListener('click', function() {
+            checkValidity()
+        })
+    
+        function checkValidity() {
+            var inputs = document.querySelectorAll("input")
+            console.log(inputs)
+            for(var i = 0; i < inputs.length; i++) {
+                if(inputs[i].textContent === "" && inputs[i].hasAttribute("required"))
+                inputs[i].classList.add("redBorder")
+                break;  
+            }
+        }
+        
+    </script>
+</body>
+</html>
