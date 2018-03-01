@@ -24,7 +24,7 @@
         <label>inp-4<input type="text" required></label>
         <label>inp-5<input type="text"></label>
         <br>
-        <button type="submit"></button>     
+        <button type="submit">Submit</button>     
     </form>
 
     <script>
@@ -38,9 +38,8 @@
             var inputs = document.querySelectorAll("input")
             console.log(inputs)
             for(var i = 0; i < inputs.length; i++) {
-                if(inputs[i].textContent === "" && inputs[i].hasAttribute("required"))
+                if(inputs[i].value === "" && inputs[i].hasAttribute("required"))
                 inputs[i].classList.add("redBorder")
-                break;  
             }
         }
         
