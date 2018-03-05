@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script> 
+    <title>Document</title>
+    <style>
+        .border-bottom {
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Some stuff</li>
+        <li class="active">Contact</li>
+    </ul>
+</nav>
+    
+
+ 
+        
+<script>
+    $(function(){
+        $("li:first").addClass("border-bottom")
+       var li = $("li")
+       
+       var activeElem = $("li.active");
+       activeElem.css("background-color", "green")
+       
+       
+
+})
+</script>
+</body>
+</html>

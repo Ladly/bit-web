@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .border-red {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div>
+            <img src="http://via.placeholder.com/200" alt="">
+            <img src="http://via.placeholder.com/200" alt="">
+            <img src="http://via.placeholder.com/200" alt="">
+        </div>
+        <div>
+            <img src="http://via.placeholder.com/300" alt="">
+            <img src="http://via.placeholder.com/300" alt="">
+            <img src="http://via.placeholder.com/300" alt="">
+        </div>
+    </div>
+
+    <script>
+        var imgs = document.querySelectorAll("img")
+
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].addEventListener("click", addBorder)
+        }
+
+        function addBorder(e) {
+            if (e.target.width !== 300) {
+                e.stopPropagation()
+            } else {
+                e.target.classList.add('border-red')
+            }
+        }
+
+        document.addEventListener("click", getTargetElement, true)
+
+        function getTargetElement(e) {
+            console.log(e.target);
+ 
+        }
+    </script>
+</body>
+
+</html>
