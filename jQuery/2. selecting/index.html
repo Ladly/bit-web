@@ -15,6 +15,10 @@
         .border-bottom {
             border-bottom: 1px solid black;
         }
+
+        .to-upper-case {
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
@@ -24,23 +28,18 @@
         <li>Home</li>
         <li>About</li>
         <li>Some stuff</li>
+        <li>Some other stuff</li>
         <li class="active">Contact</li>
     </ul>
 </nav>
-    
-
- 
-        
+      
 <script>
     $(function(){
         $("li:first").addClass("border-bottom")
-       var li = $("li")
-       
+       var li = $("li").addClass("to-upper-case")      
        var activeElem = $("li.active");
        activeElem.css("background-color", "green")
-       
-       
-
+       $("li:eq(2)").css("background-color", "red") 
 })
 </script>
 </body>

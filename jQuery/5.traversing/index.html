@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0
+        }
+        img {
+            width: 33%;
+        }
+
+        .border-red {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="http://via.placeholder.com/300" alt="">
+        <img src="http://via.placeholder.com/300" alt="">
+        <img src="http://via.placeholder.com/300" alt="">
+    </div>
+    <div>
+        <img src="http://via.placeholder.com/300" alt="">
+        <img src="http://via.placeholder.com/300" alt="">
+        <img src="http://via.placeholder.com/300" alt="">
+    </div>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>  
+        
+<script>
+    $(function(){
+
+        $("img:first").addClass("border-red")
+        $("img").each(function(index, element){
+            if($(element).hasClass("border-red")) {
+            $(element).removeClass("border-red")
+            $(element).parent().next().children(":first").hide();
+            }
+             
+        })
+
+})
+</script>
+</body>
+</html>

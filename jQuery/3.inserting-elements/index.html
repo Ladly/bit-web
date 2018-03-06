@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script> 
+    <title>Document</title>
+    <style>
+        .border-green {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+     
+<script>
+    $(function(){
+        var arrayOfImages = [
+            "http://via.placeholder.com/200", 
+            "http://via.placeholder.com/200", 
+            "http://via.placeholder.com/200", 
+            "http://via.placeholder.com/200", 
+            "http://via.placeholder.com/200"
+            ]
+
+    
+        for(var i = 0; i < arrayOfImages.length; i++) {
+            var $image = $("<img>")        
+            $image.attr("src", arrayOfImages[i])
+            $("body").append($image)
+        }
+        
+        var $galleryTitle = $("<h1></h1>").text("Gallery title")        
+        $("img:first").before($galleryTitle)
+
+        $img = $("img")
+        
+        $("img").each(function(){
+            $elem=$(this)
+            $elem.width(Math.floor(Math.random()*(400-50)+50))            
+        })
+
+        $img.each(function(){
+            $elem=$(this) 
+            $elem.addClass("border-green")
+            if($elem. width() >= 200) {
+                return false;
+            }
+        })
+        
+    })
+    
+</script>
+</body>
+</html>
