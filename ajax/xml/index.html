@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://freegeoip.net/xml/4.2.2.2");
+        request.send();
+    
+        request.onload = function() {
+            
+        var requestDoc = request.responseXML;
+        console.log(requestDoc.children[0].children[2])
+        }
+
+    </script>
+</body>
+</html>

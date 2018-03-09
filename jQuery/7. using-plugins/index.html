@@ -18,13 +18,18 @@
 <body>
 
         <div class="owl-carousel">
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
+            <div><img src="http://via.placeholder.com/200" alt=""></div>
         </div>
               
 
@@ -38,7 +43,14 @@
 <script>
    
    $(function(){
-        $(".owl-carousel").owlCarousel();
+        $(".owl-carousel").owlCarousel({
+            items:4,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true
+        });
     });
 
 </script>
