@@ -3,7 +3,8 @@ let model = (() => {
     const urls = {
         display50: "http://api.tvmaze.com/shows",
         details: "http://api.tvmaze.com/shows/",
-        showDetailsPage: "./show-info.html"
+        showDetailsPage: "./show-info.html",
+        search: "http://api.tvmaze.com/search/shows?q="
 
     }
 

@@ -5,6 +5,19 @@ let view = (() => {
         showDetailHolder: document.querySelector(".show-details"),
         seasonsHolder: document.querySelector(".show-seasons"),
         showCast: document.querySelector(".show-cast"),
+        searchInput: document.querySelector("input"),
+        searchList: document.querySelector(".search-list")
+    }
+
+    const displaySearchResults = (arr) => {
+        if(nodes.searchList.children.length >= 10) {
+            nodes.searchList.innerHTML = ""
+        }
+        arr.forEach(element => {
+            let li = document.createElement("li")
+            li.textContent = element.show.name
+            nodes.searchList.appendChild(li)
+        })
     }
 
     const displayShowDetails = (obj) => {
@@ -67,7 +80,8 @@ let view = (() => {
         displayMovies, 
         displayShowDetails,
         displayShowSesons,
-        displayShowCast
+        displayShowCast,
+        displaySearchResults
     }
 
     return expose

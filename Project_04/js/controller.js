@@ -12,6 +12,30 @@ let controller = ((data, ui) => {
             anchor.addEventListener("click", (goTo(data.urls.showDetailsPage))())           // this function gives me error. investigate or ask
         }
     })
+
+    console.log(ui.nodes);
+    
+    ui.nodes.searchInput.addEventListener("keydown", function() {
+        if(ui.nodes.searchInput.value.length >= 3) {
+            console.log(this.value);
+            let request = new XMLHttpRequest();
+            request.open('GET', `${data.urls.search}${this.value}`);
+            request.send();
+            
+            request.onload = () => {
+                if (request.status >= 200 && request.status < 400) {
+                    let response = JSON.parse(request.responseText);
+                    console.log(response);
+                    ui.displaySearchResults(response)
+                    
+                } else {
+                    
+                    throw new Error("Something went wrong")
+                }
+            };
+            
+        }
+    })
     
     const initDisplayShows = () => {
         let request = new XMLHttpRequest();
